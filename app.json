@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "page/book-list/book-list",
+    "page/book-detail/book-detail",
+    "page/comment/comment",
+    "page/user/user",
+    "page/user-book/user-book"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "page/book-list/book-list",
+        "text": "首页",
+        "iconPath": "assets/images/bookList.png",
+        "selectedIconPath": "assets/images/bookListSelected.png"
+      },
+      {
+        "pagePath": "page/user/user",
+        "text": "个人中心",
+        "iconPath": "assets/images/user.png",
+        "selectedIconPath": "assets/images/userSelected.png"
+      }
+    ],
+    "color": "#bfbfbf",
+    "selectedColor": "#1AAD19"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#fea203",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,56 @@
+<view>
+  <view class="book-detail-container">
+    <view class="book-info-container">
+      <view class="book-info">
+        <view class="book-image">
+          <image src="{{bookInfo.imageUrl}}"></image>
+        </view>
+        <view class="book-description">
+          <text>{{bookInfo.name}}</text>
+          <text>{{bookInfo.author}}</text>
+          <text>{{bookInfo.publisher}}</text>
+          <view class="download-book-file-loading-container" wx:if="{{downloadBoolFilePercent > 0}}">
+            <text>下载书籍中</text>
+            <progress
+              percent="{{downloadBoolFilePercent}}"
+              activeColor="#fea203"
+              backgroundColor="#cdcdcd"
+              stroke-width="9"
+              active
+              active-mode="forwards"
+              show-info/>
+          </view>
+        </view>
+      </view>
+      <view class="book-buy">
+        <button type="primary" catchtap="buyBook" wx:if="{{!isBuyBook}}">兑换</button>
+        <button type="default" catchtap="readBook" wx:if="{{isBuyBook}}">阅读</button>
+      </view>
+    </view>
+    <view class="book-comment-container">
+      <view class="comment-title">
+        <text>--------- 评论 ---------</text>
+      </view>
+      <block wx:if="{{bookCommentList.length > 0}}">
+          <view class="book-comment-item" wx:for="{{bookCommentList}}" wx:key="index">
+            <view class="user-avatar-container">
+              <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view class="comment-info">
+              <open-data type="userNickName" class="user-nickname"></open-data>
+              <text class="content">{{item.content}}</text>
+              <text class="created-at">{{item.createdAt}}</text>
+            </view>
+          </view>
+        </block>
+
+        <block wx:else>
+          <view class="comment-placeholder">来当第一个评论的人吧～</view>
+        </block>
+    </view>
+
+    <view class="post-commnet-container">
+      <button type="primary" catchtap="toBookComment">写评论</button>
+    </view>
+  </view>
+</view>

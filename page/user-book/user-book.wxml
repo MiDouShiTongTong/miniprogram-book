@@ -1,0 +1,19 @@
+<view>
+  <block wx:if="{{bookList.length > 0}}">
+    <view class="user-book-container">
+      <view class="book-item" wx:for="{{bookList}}" wx:key="{{index}}" data-book-info="{{item}}" catchtap="toBookDetail">
+        <view class="book-image">
+          <image src="{{item.imageUrl}}"></image>
+        </view>
+        <view class="book-name">
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty-container">
+      <text>我暂无书籍</text>
+    </view>
+  </block>
+</view>

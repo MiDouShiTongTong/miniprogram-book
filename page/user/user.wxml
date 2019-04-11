@@ -1,0 +1,21 @@
+<view>
+  <view class="user-container">
+    <view class="user-info-container">
+      <view class="avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName" class="nickname"></open-data>
+    </view>
+
+    <view class="user-function-container">
+      <view class="user-function-item">
+        <text>积分</text>
+        <text wx:if="{{isSignIn}}">50</text>
+      </view>
+      <view class="user-function-item" catchtap="toUserBook">
+        <text>我的书籍</text>
+        <text class="arrow"></text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+.book-list-swiper {
+  height: 500px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  box-sizing:border-box;
+}
+
+.book-list-swiper swiper-item {
+  overflow: visible;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.book-list-swiper swiper-item .book-container {
+  position: relative;
+  top: -3px;
+  box-shadow: 0 0 15px 0 #e1e1e1;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.book-container .book-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+}
+
+.book-container .book-image image {
+  max-width: 75%;
+}
+
+.book-container .book-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+
+.book-container .book-info text {
+  margin-bottom: 11rpx;
+  font-size: 80%;
+}

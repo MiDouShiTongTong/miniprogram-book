@@ -1,0 +1,18 @@
+page {
+  background-color: #f2f2f2;
+}
+
+button[type=primary] {
+  color: #666 !important;
+  background-color: #fea213 !important;
+}
+
+.button-hover[type=primary] {
+  color: #666 !important;
+  background-color: #e2a93ebe !important;
+}
+
+.button-hover { 
+  color: #666 !important;
+  background-color: #e2a93ebe !important;
+}

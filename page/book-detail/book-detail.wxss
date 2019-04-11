@@ -1,0 +1,97 @@
+.book-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50rpx 30rpx;
+  background-color: #fff;
+}
+
+.book-info-container .book-info {
+  display: flex;
+}
+
+.book-info .book-image image {
+  width: 200rpx;
+  height: 300rpx;
+  box-shadow: 0 0 5px 0 #e1e1e1;
+}
+
+.book-info .book-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 30rpx;
+}
+
+.book-info .book-description text  {
+  margin-bottom: 5px;
+}
+
+.book-info .book-description .download-book-file-loading-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #666;
+}
+
+.book-info-container .book-buy button {
+  font-size: 25rpx;
+}
+
+.book-comment-container .comment-title {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: rgba(0, 0, 0, .5);
+}
+
+.book-comment-container .comment-placeholder {
+  padding-top: 20rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: rgba(0, 0, 0, .5);
+}
+
+.book-comment-container .book-comment-item {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fff;
+}
+
+.book-comment-container .book-comment-item .user-avatar-container {
+  width: 68rpx;
+  height: 68rpx;
+  padding-top: 10rpx;
+}
+
+
+.book-comment-container .book-comment-item .comment-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.book-comment-container .book-comment-item .comment-info  .user-nickname {
+   margin-bottom: 10rpx;
+}
+
+.book-comment-container .book-comment-item .comment-info .content {
+  margin-bottom: 10rpx;
+}
+
+.book-comment-container .book-comment-item .comment-info .created-at {
+  font-size: 25rpx;
+}
+
+.post-commnet-container {
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  left: 20rpx;
+}

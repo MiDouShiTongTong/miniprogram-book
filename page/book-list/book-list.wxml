@@ -1,0 +1,29 @@
+<view>
+  <view class="book-list-container">
+    <swiper
+      class="book-list-swiper"
+      indicator-dots="{{false}}"
+      autoplay="{{false}}"
+      duration="{{500}}"
+      circular="{{true}}"
+      previous-margin="{{'105rpx'}}"
+      next-margin="{{'105rpx'}}">
+      <block wx:for="{{bookList}}" wx:key="{{index}}">
+        <swiper-item>
+          <view class="book-container"
+                data-book-info="{{item}}"
+                bindtap="toBookDetail">
+            <view class="book-image">
+              <image src="{{item.imageUrl}}" width="355" height="150"/>
+            </view>
+            <view class="book-info">
+              <text>{{item.name}}</text>
+              <text>{{item.author}}</text>
+              <text>{{item.publisher}}</text>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

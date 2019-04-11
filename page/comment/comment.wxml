@@ -1,0 +1,13 @@
+<view>
+  <view class="comment-container">
+    <view class="book-name">
+		  <text>{{bookInfo.name}}</text>
+	  </view>
+    <view class="comment-content">
+      <textarea placeholder="关于这本书的看法..." maxlength="140" value="{{comment}}" bindinput="changeCommentContent"></textarea>
+    </view>
+    <form report-submit bindsubmit="submitCommentForm">
+      <button type="primary" form-type="submit">提交评论</button>
+    </form>
+  </view>
+</view>

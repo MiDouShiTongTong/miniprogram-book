@@ -1,0 +1,18 @@
+.book-name {
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+
+textarea {
+  width: 100%;
+  padding: 20rpx;
+  font-size: 35rpx;
+  background-color: #fff;
+}
+
+form {
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  left: 20rpx;
+}
